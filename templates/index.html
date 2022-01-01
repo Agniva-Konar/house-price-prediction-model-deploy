@@ -10,14 +10,14 @@
         background-image:url({{url_for('static',filename='house.jpeg')}});
         background-repeat:no-repeat;
         background-attachment:fixed;
-        background-position:center;
+        background-position:right center;
     }
     </style>	
 
 	<h1><p style="color:white">U.S. House Price Prediction</p></h1>
 
 	<form action="{{ url_for('predict')}}"method="post">
-		<label for="mssubclass"><p style="color:white"><b>1) Type of Dwelling</b></p></label>
+		<label for="mssubclass"><b>1) Type of Dwelling</b></label>
 		<select id="mssubclass" name="mssubclass">
 			<option value="1">1-STORY 1946 & NEWER ALL STYLES(20)</option>
 			<option value="2">1-STORY 1945 & OLDER(30)</option>
@@ -37,7 +37,7 @@
 			<option value="16">2 FAMILY CONVERSION - ALL STYLES AND AGES(190)</option>
 		</select>
 		<br>
-		<label for="mszoning"><p style="color:white"><b>2) General Zoning Classification</b></p></label>
+		<label for="mszoning"><b>2) General Zoning Classification</b></label>
 		<select id="mszoning" name="mszoning>
 			<option value="1">Agriculture(A)</option>
 			<option value="2">Commercial(C)</option>
@@ -49,20 +49,20 @@
 			<option value="8">Residential Medium Density(RM)</option>
 		</select>
 		<br>
-		<label for="lotfrontage"><p style="color:white"><b>3) Lot Frontage (in ft.)</b></p></label>
+		<label for="lotfrontage"><b>3) Lot Frontage (in ft.)</b></label>
 		<input type="text" id="lotfrontage" name="lotfrontage">
 		<br>
-		<label for="lotarea"><p style="color:white"><b>4) Lot Area (in sq. ft.)</b></p></label>
+		<label for="lotarea"><b>4) Lot Area (in sq. ft.)</b></label>
 		<input type="text" id="lotarea" name="lotarea">
 		<br>
-		<label for="alley"><p style="color:white"><b>5) Alley</b></p></label>
+		<label for="alley"><b>5) Alley</b></label>
 		<select id="alley" name="alley">
 			<option value="1">Gravel</option>
 			<option value="2">Paved</option>
 			<option value="3">No Alley Access</option>
 		</select>
 		<br>
-		<label for="lotshape"><p style="color:white"><b>6) Lot Shape</b></p></label>
+		<label for="lotshape"><b>6) Lot Shape</b></label>
 		<select id="lotshape" name="lotshape">
 			<option value="1">Regular</option>
 			<option value="2">Slightly Irregular</option>
@@ -70,7 +70,7 @@
 			<option value="4">Irregular</option>
 		</select>
 		<br>
-		<label for="landcontour"><p style="color:white"><b>7) Land Contour</b></p></label>
+		<label for="landcontour"><b>7) Land Contour</b></label>
 		<select id="landcontour" name="landcontour">
 			<option value="1">Near Flat/Level</option>
 			<option value="2">Banked</option>
@@ -78,7 +78,7 @@
 			<option value="4">Depression</option>
 		</select>
 		<br>
-		<label for="lotconfig"><p style="color:white"><b>8) Lot Configuration</b></p></label>
+		<label for="lotconfig"><b>8) Lot Configuration</b></label>
 		<select id="lotconfig" name="lotconfig">
 			<option value="1">Inside lot</option>
 			<option value="2">Corner lot</option>
@@ -87,7 +87,7 @@
 			<option value="5">Frontage on 3 sides of property</option>
 		</select>
 		<br>
-		<label for="condition"><p style="color:white"><b>9) Proximity to various conditions</b></p></label>
+		<label for="condition"><b>9) Proximity to various conditions</b></label>
 		<select id="condition" name="condition">
 			<option value="1">Adjacent to arterial street</option>
 			<option value="2">Adjacent to feeder street</option>
@@ -100,7 +100,7 @@
 			<option value="9">Adjacent to East-West Railroad</option>
 		</select>
 		<br>
-		<label for="bldgtype"><p style="color:white"><b>10) Building Type</b></p></label>
+		<label for="bldgtype"><b>10) Building Type</b></label>
 		<select id="bldgtype" name="bldgtype">
 			<option value="1">Single-family Detached</option>
 			<option value="2">Two-family Conversion</option>
@@ -109,7 +109,7 @@
 			<option value="5">Townhouse Inside Unit</option>
 		</select>
 		<br>
-		<label for="housestyle"><p style="color:white"><b>11) House Style</b></p></label>
+		<label for="housestyle"><b>11) House Style</b></label>
 		<select id="housestyle" name="housestyle">
 			<option value="1">One story</option>
 			<option value="2">One and one-half story: 2nd level finished</option>
@@ -121,13 +121,13 @@
 			<option value="8">Split Level</option>
 		</select>
 		<br>
-		<label for="overqual"><p style="color:white"><b>12) Overall Quality and Finishing of the house (1-10)</b></p></label>
+		<label for="overqual"><b>12) Overall Quality and Finishing of the house (1-10)</b></label>
 		<input type="text" id="overqual" name="overqual">
 		<br>
-		<label for="overcond"><p style="color:white"><b>13) Overall Condition of the house (1-10)</b></p></label>
+		<label for="overcond"><b>13) Overall Condition of the house (1-10)</b></label>
 		<input type="text" id="overcond" name="overcond">
 		<br>
-		<label for="roofstyle"><p style="color:white"><b>14) Roof Style</b></p></label>
+		<label for="roofstyle"><b>14) Roof Style</b></label>
 		<select id="roofstyle" name="roofstyle">
 			<option value="1">Flat</option>
 			<option value="2">Gable</option>
@@ -137,7 +137,7 @@
 			<option value="6">Shed</option>
 		</select>
 		<br>
-		<label for="ext1"><p style="color:white"><b>15) Exterior Covering on House</b></p></label>
+		<label for="ext1"><b>15) Exterior Covering on House</b></label>
 		<select id="ext1" name="ext1">
 			<option value="1">Asbestos Shingles</option>
 			<option value="2">Asphalt Shingles</option>
@@ -158,7 +158,7 @@
 			<option value="17">Wood Shingles</option>
 		</select>
 		<br>
-		<label for="ext2"><p style="color:white"><b>16) Exterior Covering on House (if more than one)</b></p></label>
+		<label for="ext2"><b>16) Exterior Covering on House (if more than one)</b></label>
 		<select id="ext2" name="ext2">
 			<option value="1">Asbestos Shingles</option>
 			<option value="2">Asphalt Shingles</option>
@@ -179,7 +179,7 @@
 			<option value="17">Wood Shingles</option>
 		</select>
 		<br>
-		<label for="mvt"><p style="color:white"><b>17) Masonry Veneer Type</b></p></label>
+		<label for="mvt"><b>17) Masonry Veneer Type</b></label>
 		<select id="mvt" name="mvt">
 			<option value="1">Brick Common</option>
 			<option value="2">Brick Face</option>
@@ -188,10 +188,10 @@
 			<option value="5">Stone</option>
 		</select>
 		<br>
-		<label for="mva"><p style="color:white"><b>18) Masonry Veneer Area (in sq. ft.)</b></p></label>
+		<label for="mva"><b>18) Masonry Veneer Area (in sq. ft.)</b></label>
 		<input type="text" id="mva" name="mva">
 		<br>
-		<label for="extqual"><p style="color:white"><b>19) Material Quality of the exterior</b></p></label>
+		<label for="extqual"><b>19) Material Quality of the exterior</b></label>
 		<select id="extqual" name="extqual">
 			<option value="1">Poor</option>
 			<option value="2">Fair</option>
@@ -200,7 +200,7 @@
 			<option value="5">Excellent</option>
 		</select>
 		<br>
-		<label for="extcond"><p style="color:white"><b>20) Present Material Condition of the exterior</b></p></label>
+		<label for="extcond"><b>20) Present Material Condition of the exterior</b></label>
 		<select id="extcond" name="extcond">
 			<option value="1">Poor</option>
 			<option value="2">Fair</option>
@@ -209,7 +209,7 @@
 			<option value="5">Excellent</option>
 		</select>
 		<br>
-		<label for="foundation"><p style="color:white"><b>21) Type of Foundation</label>
+		<label for="foundation"><b>21) Type of Foundation</b></label>
 		<select id="foundation" name="foundation">
 			<option value="1">Brick & Tile</option>
 			<option value="2">Cinder Block</option>
@@ -219,7 +219,7 @@
 			<option value="6">Wood</option>
 		</select>
 		<br>
-		<label for="bsmtqual"><p style="color:white"><b>22) Height of the Basement</b></p></label>
+		<label for="bsmtqual"><b>22) Height of the Basement</b></label>
 		<select id="bsmtqual" name="bsmtqual">
 			<option value="0">No Basement</option>
 			<option value="1">Poor (<70 inches)</option>
@@ -229,7 +229,7 @@
 			<option value="5">Excellent (100+ inches)</option>
 		</select>
 		<br>
-		<label for="bsmtcond"><p style="color:white"><b>23) Condition of the Basement</b></p></label>
+		<label for="bsmtcond"><b>23) Condition of the Basement</b></label>
 		<select id="bsmtcond" name="bsmtcond">
 			<option value="0">No Basement</option>
 			<option value="1">Poor</option>
@@ -239,7 +239,7 @@
 			<option value="5">Excellent</option>
 		</select>
 		<br>
-		<label for="bsmtexpo"><p style="color:white"><b>24) Exposure from the Basement</b></p></label>
+		<label for="bsmtexpo"><b>24) Exposure from the Basement</b></label>
 		<select id="bsmtexpo" name="bsmtexpo">
 			<option value="0">No Basement</option>
 			<option value="1">No Exposure</option>
@@ -248,7 +248,7 @@
 			<option value="4">Good Exposure</option>
 		</select>
 		<br>
-		<label for="bsmtfintype1"><p style="color:white"><b>25) Rating of Type 1 Basement Finished Area</b></p></label>
+		<label for="bsmtfintype1"><b>25) Rating of Type 1 Basement Finished Area</b></label>
 		<select id="bsmtfintype1" name="bsmtfintype1">
 			<option value="0">No Basement</option>
 			<option value="1">Unfinished Basement</option>
@@ -259,10 +259,10 @@
 			<option value="6">Good Living Quarters</option>
 		</select>
 		<br>
-		<label for="bsmtfinsf1"><p style="color:white"><b>26) Area of Finished Type 1 Basement (in sq. ft.)</b></p></label>
+		<label for="bsmtfinsf1"><b>26) Area of Finished Type 1 Basement (in sq. ft.)</b></label>
 		<input type="text" id="bsmtfinsf1" name="bsmtfinsf1">
 		<br>
-		<label for="bsmtfintype2"><p style="color:white"><b>27) Rating of Type 2 Basement Finished Area (if any)</b></p></label>
+		<label for="bsmtfintype2"><b>27) Rating of Type 2 Basement Finished Area (if any)</b></label>
 		<select id="bsmtfintype2" name="bsmtfintype2">
 			<option value="0">No Basement</option>
 			<option value="1">Unfinished Basement</option>
@@ -273,13 +273,13 @@
 			<option value="6">Good Living Quarters</option>
 		</select>
 		<br>
-		<label for="bsmtfinsf2"><p style="color:white"><b>28) Area of Finished Type 2 Basement (if any) (in sq. ft.)</b></p></label>
+		<label for="bsmtfinsf2"><b>28) Area of Finished Type 2 Basement (if any) (in sq. ft.)</b></label>
 		<input type="text" id="bsmtfinsf2" name="bsmtfinsf2">
 		<br>
-		<label for="bsmtunfsf"><p style="color:white"><b>29) Area of Unfinished Basement (in sq. ft.)</b></p></label>
+		<label for="bsmtunfsf"><b>29) Area of Unfinished Basement (in sq. ft.)</b></label>
 		<input type="text" id="bsmtunfsf" name="bsmtunfsf">
 		<br>
-		<label for="electrical"><p style="color:white"><b>30) Electrical System</b></p></label>
+		<label for="electrical"><b>30) Electrical System</b></label>
 		<select id="electrical" name="electrical">
 			<option value="1">Standard Circuit Breakers & Romex</option>
 			<option value="2">Fuse Box over 60 AMP and all Romex wiring</option>
@@ -288,34 +288,34 @@
 			<option value="5">Mixed</option>
 		</select>
 		<br>
-		<label for="1stflrsf"><p style="color:white"><b>31) Area of 1st Floor (in sq. ft.)</b></p></label>
+		<label for="1stflrsf"><b>31) Area of 1st Floor (in sq. ft.)</b></label>
 		<input type="text" id="1stflrsf" name="1stflrsf">
 		<br>
-		<label for="2ndflrsf"><p style="color:white"><b>32) Area of 2nd Floor (in sq. ft.)</b></p></label>
+		<label for="2ndflrsf"><b>32) Area of 2nd Floor (in sq. ft.)</b></label>
 		<input type="text" id="2ndflrsf" name="2ndflrsf">
 		<br>
-		<label for="lowqualfinsf"><p style="color:white"><b>33) Area of all low quality finished floors (in sq. ft.)</b></p></label>
+		<label for="lowqualfinsf"><b>33) Area of all low quality finished floors (in sq. ft.)</b></label>
 		<input type="text" id="lowqualfinsf" name="lowqualsf">
 		<br>
-		<label for="bsmtfullbath"><p style="color:white"><b>34) Number of full bathrooms in basement</b></p></label>
+		<label for="bsmtfullbath"><b>34) Number of full bathrooms in basement</b></label>
 		<input type="text" id="bsmtfullbath" name="bsmtfullbath">
 		<br>
-		<label for="bsmthalfbath"><p style="color:white"><b>35) Number of half bathrooms in basement</b></p></label>
+		<label for="bsmthalfbath"><b>35) Number of half bathrooms in basement</b></label>
 		<input type="text" id="bsmthalfbath" name="bsmthalfbath">
 		<br>
-		<label for="fullbath"><p style="color:white"><b>36) Number of full bathrooms above ground</b></p></label>
+		<label for="fullbath"><b>36) Number of full bathrooms above ground</b></label>
 		<input type="text" id="fullbath" name="fullbath">
 		<br>
-		<label for="halfbath"><p style="color:white"><b>37) Number of half bathrooms above ground</b></p></label>
+		<label for="halfbath"><b>37) Number of half bathrooms above ground</b></label>
 		<input type="text" id="halfbath" name="halfbath">
 		<br>
-		<label for="bedabvgr"><p style="color:white"><b>38) Number of bedrooms above ground</b></p></label>
+		<label for="bedabvgr"><b>38) Number of bedrooms above ground</b></label>
 		<input type="text" id="bedabvgr" name="bedabvgr">
 		<br>
-		<label for="kitchenabvgr"><p style="color:white"><b>39) Number of kitchens above ground</b></p></label>
+		<label for="kitchenabvgr"><b>39) Number of kitchens above ground</b></label>
 		<input type="text" id="kitchenabvgr" name="kitchenabvgr">
 		<br>
-		<label for="kitchenqual"><p style="color:white"><b>40) Quality of Kitchen</b></p></label>
+		<label for="kitchenqual"><b>40) Quality of Kitchen</b></label>
 		<select id="kitchenqual" name="kitchenqual">
 			<option value="1">Poor</option>
 			<option value="2">Fair</option>
@@ -324,10 +324,10 @@
 			<option value="5">Excellent</option>
 		</select>
 		<br>
-		<label for="roomsabvgr"><p style="color:white"><b>41) Number of rooms above ground (excluding bathrooms)</b></p></label>
+		<label for="roomsabvgr"><b>41) Number of rooms above ground (excluding bathrooms)</b></label>
 		<input type="text" id="roomsabvgr" name="roomsabvgr">
 		<br>
-		<label for="function"><p style="color:white"><b>42) Home Functionality</b></p></label>
+		<label for="function"><b>42) Home Functionality</b></label>
 		<select id="function" name="function">
 			<option value="1">Typical Functionality</option>
 			<option value="2">Minor Deductions 1</option>
@@ -339,10 +339,10 @@
 			<option value="8">Salvage Only</option>
 		</select>
 		<br>
-		<label for="fireplace"><p style="color:white"><b>43) Number of fireplaces</b></p></label>
+		<label for="fireplace"><b>43) Number of fireplaces</b></label>
 		<input type="text" id="fireplace" name="fireplace">
 		<br>
-		<label for="fireplacequal"><p style="color:white"><b>44) Quality of Fireplace(s)</b></p></label>
+		<label for="fireplacequal"><b>44) Quality of Fireplace(s)</b></label>
 		<select id="fireplacequal" name="fireplacequal">
 			<option value="0">No Fireplace</option>
 			<option value="1">Poor</option>
@@ -352,7 +352,7 @@
 			<option value="5">Excellent</option>
 		</select>
 		<br>
-		<label for="gartype"><p style="color:white"><b>45) Garage Type</b></p></label>
+		<label for="gartype"><b>45) Garage Type</b></label>
 		<select id="gartype" name="gartype">
 			<option value="0">No Garage</option>
 			<option value="1">More than one type of garage</option>
@@ -363,7 +363,7 @@
 			<option value="6">Detached from home</option>
 		</select>
 		<br>
-		<label for="garfin"><p style="color:white"><b>46) Garage Finish Type</b></p></label>
+		<label for="garfin"><b>46) Garage Finish Type</b></label>
 		<select id="garfin" name="garfin">
 			<option value="0">No Garage</option>
 			<option value="1">Unfinished</option>
@@ -371,35 +371,35 @@
 			<option value="3">Finished</option>
 		</select>
 		<br>
-		<label for="garcars"><p style="color:white"><b>47) Size of Garage in car capacity</b></p></label>
+		<label for="garcars"><b>47) Size of Garage in car capacity</b></label>
 		<input type="text" id="garcars" name="garcars">
 		<br>
-		<label for="gararea"><p style="color:white"><b>48) Area of garage (in sq. ft.)</b></p></label>
+		<label for="gararea"><b>48) Area of garage (in sq. ft.)</b></label>
 		<input type="text" id="gararea" name="gararea">
 		<br>
-		<label for="driveway"><p style="color:white"><b>49) Driveway</b></p></label>
+		<label for="driveway"><b>49) Driveway</b></label>
 		<select id="driveway" name="driveway">
 			<option value="1">Paved</option>
 			<option value="2">Partial Pavement</option>
 			<option value="3">Dirt/Gravel</option>
 		</select>
 		<br>
-		<label for="wooddeck"><p style="color:white"><b>50) Wood Deck Area (in sq. ft.)</b></p></label>
+		<label for="wooddeck"><b>50) Wood Deck Area (in sq. ft.)</b></label>
 		<input type="text" id="wooddeck" name="wooddeck">
 		<br>
-		<label for="openporch"><p style="color:white"><b>51) Area of Open Porch (in sq. ft.)</b></p></label>
+		<label for="openporch"><b>51) Area of Open Porch (in sq. ft.)</b></label>
 		<input type="text" id="openporch" name="openporch">
 		<br>
-		<label for="encporch"><p style="color:white"><b>52) Area of Enclosed Porch (in sq. ft.)</b></p></label>
+		<label for="encporch"><b>52) Area of Enclosed Porch (in sq. ft.)</b></label>
 		<input type="text" id="encporch" name="encporch">
 		<br>
-		<label for="3snporch"><p style="color:white"><b>53) Area of Three Season Porch (in sq. ft.)</b></p></label>
+		<label for="3snporch"><b>53) Area of Three Season Porch (in sq. ft.)</b></label>
 		<input type="text" id="3snporch" name="3snporch">
 		<br>
-		<label for="screenporch"><p style="color:white"><b>54) Area of Screen Porch (in sq. ft.)</b></p></label>
+		<label for="screenporch"><b>54) Area of Screen Porch (in sq. ft.)</b></label>
 		<input type="text" id="screenporch" name="screenporch">
 		<br>
-		<label for="fence"><p style="color:white"><b>55) Fence Quality</b></p></label>
+		<label for="fence"><b>55) Fence Quality</b></label>
 		<select id="fence" name="fence">
 			<option value="0">No Fence</option>
 			<option value="1">Minimum Wood/Wire</option>
@@ -408,7 +408,7 @@
 			<option value="4">Good Privacy</option>
 		</select>
 		<br>
-		<label for="saletype"><p style="color:white"><b>56) Sale Type</b></p></label>
+		<label for="saletype"><b>56) Sale Type</b></label>
 		<select id="saletype" name="saletype">
 			<option value="1">Warranty Deed - Conventional</option>
 			<option value="2">Warranty Deed - Cash</option>
@@ -422,7 +422,7 @@
 			<option value="10">Other</option>
 		</select>
 		<br>
-		<label for="salecond"><p style="color:white"><b>57) Sale Condition</b></p></label>
+		<label for="salecond"><b>57) Sale Condition</b></label>
 		<select id="salecond" name="salecond">
 			<option value="1">Normal Sale</option>
 			<option value="2">Abnormal Sale -  trade, foreclosure, short sale</option>
@@ -436,7 +436,7 @@
 	</form>
 	<br>
 	<br>
-	<p style="color:white"><b>{{prediction_text}}</b></p>
+	{{prediction_text}}
 	</div>
 </body>
 </html>
